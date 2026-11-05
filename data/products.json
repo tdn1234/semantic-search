@@ -1,0 +1,122 @@
+[
+    {
+      "sku": "SHOE-RUN-001",
+      "name": "Velocity Men's Running Shoes",
+      "description": "Lightweight men's running shoes with breathable mesh and responsive cushioning for daily road running.",
+      "category": "Men > Shoes > Running",
+      "brand": "Velocity",
+      "color": "Black",
+      "price": 89.99,
+      "in_stock": true
+    },
+    {
+      "sku": "SHOE-RUN-002",
+      "name": "Velocity Women's Running Shoes",
+      "description": "Lightweight women's road running shoes with soft cushioning and breathable mesh.",
+      "category": "Women > Shoes > Running",
+      "brand": "Velocity",
+      "color": "Blue",
+      "price": 94.99,
+      "in_stock": true
+    },
+    {
+      "sku": "SHOE-TRAIL-001",
+      "name": "Summit Trail Running Shoes",
+      "description": "Durable trail shoes with aggressive grip, toe protection and water-resistant upper material.",
+      "category": "Men > Shoes > Trail Running",
+      "brand": "Summit",
+      "color": "Green",
+      "price": 119.99,
+      "in_stock": true
+    },
+    {
+      "sku": "SHOE-WALK-001",
+      "name": "Comfort Everyday Walking Shoes",
+      "description": "Comfortable walking shoes with memory foam insoles for everyday use and long periods of standing.",
+      "category": "Men > Shoes > Walking",
+      "brand": "ComfortStep",
+      "color": "Black",
+      "price": 69.99,
+      "in_stock": true
+    },
+    {
+      "sku": "JACKET-WP-001",
+      "name": "StormGuard Waterproof Jacket",
+      "description": "A lightweight waterproof and windproof jacket designed for hiking, commuting and wet weather.",
+      "category": "Men > Clothing > Jackets",
+      "brand": "StormGuard",
+      "color": "Navy",
+      "price": 149.99,
+      "in_stock": true
+    },
+    {
+      "sku": "JACKET-DOWN-001",
+      "name": "Alpine Down Jacket",
+      "description": "Insulated winter jacket filled with responsibly sourced down for cold outdoor conditions.",
+      "category": "Men > Clothing > Jackets",
+      "brand": "Alpine",
+      "color": "Black",
+      "price": 219.99,
+      "in_stock": false
+    },
+    {
+      "sku": "BAG-LAPTOP-001",
+      "name": "Urban 15-inch Laptop Backpack",
+      "description": "Water-resistant work backpack with a padded 15-inch laptop compartment and multiple organizer pockets.",
+      "category": "Bags > Backpacks > Laptop Bags",
+      "brand": "UrbanCarry",
+      "color": "Black",
+      "price": 79.99,
+      "in_stock": true
+    },
+    {
+      "sku": "BAG-TRAVEL-001",
+      "name": "Explorer Travel Backpack 40L",
+      "description": "Large carry-on travel backpack with a 40-litre capacity, compression straps and separate shoe compartment.",
+      "category": "Bags > Backpacks > Travel",
+      "brand": "Explorer",
+      "color": "Grey",
+      "price": 129.99,
+      "in_stock": true
+    },
+    {
+      "sku": "HEADPHONE-NC-001",
+      "name": "SilencePro Noise Cancelling Headphones",
+      "description": "Wireless over-ear headphones with active noise cancellation, clear calls and a 30-hour battery.",
+      "category": "Electronics > Audio > Headphones",
+      "brand": "SilencePro",
+      "color": "Black",
+      "price": 199.99,
+      "in_stock": true
+    },
+    {
+      "sku": "EARBUD-SPORT-001",
+      "name": "ActiveFit Wireless Sport Earbuds",
+      "description": "Sweat-resistant wireless earbuds with secure ear hooks for running and gym workouts.",
+      "category": "Electronics > Audio > Earbuds",
+      "brand": "ActiveFit",
+      "color": "Black",
+      "price": 59.99,
+      "in_stock": true
+    },
+    {
+      "sku": "WATCH-FIT-001",
+      "name": "Pulse Fitness Watch",
+      "description": "Fitness smartwatch with heart-rate monitoring, sleep tracking, GPS and workout modes.",
+      "category": "Electronics > Wearables > Fitness Watches",
+      "brand": "Pulse",
+      "color": "Black",
+      "price": 139.99,
+      "in_stock": true
+    },
+    {
+      "sku": "BOTTLE-INS-001",
+      "name": "ThermoSteel Insulated Water Bottle",
+      "description": "Stainless steel reusable bottle that keeps drinks cold for 24 hours and hot for 12 hours.",
+      "category": "Sports > Accessories > Water Bottles",
+      "brand": "ThermoSteel",
+      "color": "Blue",
+      "price": 29.99,
+      "in_stock": true
+    }
+  ]

@@ -1,0 +1,82 @@
+[
+    {
+      "query": "men's shoes for road running",
+      "relevant_skus": ["SHOE-RUN-001"]
+    },
+    {
+      "query": "women's running sneakers",
+      "relevant_skus": ["SHOE-RUN-002"]
+    },
+    {
+      "query": "shoes for running on muddy trails",
+      "relevant_skus": ["SHOE-TRAIL-001"]
+    },
+    {
+      "query": "comfortable shoes for standing all day",
+      "relevant_skus": ["SHOE-WALK-001"]
+    },
+    {
+      "query": "waterproof jacket for rainy weather",
+      "relevant_skus": ["JACKET-WP-001"]
+    },
+    {
+      "query": "warm coat for freezing weather",
+      "relevant_skus": ["JACKET-DOWN-001"]
+    },
+    {
+      "query": "work backpack with laptop compartment",
+      "relevant_skus": ["BAG-LAPTOP-001"]
+    },
+    {
+      "query": "carry-on backpack for travel",
+      "relevant_skus": ["BAG-TRAVEL-001"]
+    },
+    {
+      "query": "headphones that block office noise",
+      "relevant_skus": ["HEADPHONE-NC-001"]
+    },
+    {
+      "query": "earbuds for running and gym",
+      "relevant_skus": ["EARBUD-SPORT-001"]
+    },
+    {
+      "query": "watch that tracks heart rate and sleep",
+      "relevant_skus": ["WATCH-FIT-001"]
+    },
+    {
+      "query": "bottle that keeps water cold all day",
+      "relevant_skus": ["BOTTLE-INS-001"]
+    },
+    {
+      "query": "black footwear for everyday walking",
+      "relevant_skus": ["SHOE-WALK-001"]
+    },
+    {
+      "query": "lightweight breathable running footwear",
+      "relevant_skus": ["SHOE-RUN-001", "SHOE-RUN-002"]
+    },
+    {
+      "query": "bag for a 15 inch computer",
+      "relevant_skus": ["BAG-LAPTOP-001"]
+    },
+    {
+      "query": "large 40 litre travel bag",
+      "relevant_skus": ["BAG-TRAVEL-001"]
+    },
+    {
+      "query": "wireless audio for a noisy flight",
+      "relevant_skus": ["HEADPHONE-NC-001"]
+    },
+    {
+      "query": "GPS device for tracking workouts",
+      "relevant_skus": ["WATCH-FIT-001"]
+    },
+    {
+      "query": "reusable stainless steel drink container",
+      "relevant_skus": ["BOTTLE-INS-001"]
+    },
+    {
+      "query": "windproof outer layer for commuting",
+      "relevant_skus": ["JACKET-WP-001"]
+    }
+  ]
