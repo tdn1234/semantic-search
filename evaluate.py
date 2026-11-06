@@ -8,6 +8,8 @@ import time
 from pathlib import Path
 from typing import Any, Iterable
 
+from sentence_transformers import SentenceTransformer
+
 from semantic_search import SemanticSearch, TextStrategy
 
 
@@ -119,10 +121,13 @@ def evaluate_strategy(
     strategy: TextStrategy,
     model_name: str,
     k_values: tuple[int, ...] = DEFAULT_K_VALUES,
+    model: Any | None = None,
 ) -> dict[str, Any]:
+    # Pass a preloaded model to avoid reloading it for every strategy.
     engine = SemanticSearch(
         model_name=model_name,
         strategy=strategy,
+        model=model,
     )
 
     engine.index(products)
@@ -474,9 +479,16 @@ def main() -> None:
     # return
 
     # Validate the product schema before checking golden SKUs.
+    # Load the model once and share it across validation and all strategies.
+    model = SentenceTransformer(args.model)
+
+    # Warm up so the first strategy's latency is not inflated.
+    model.encode(["warm-up"])
+
     validation_engine = SemanticSearch(
         model_name=args.model,
         strategy=TextStrategy.NAME,
+        model=model,
     )
     validation_engine.validate_products(products)
 
@@ -492,6 +504,7 @@ def main() -> None:
             cases=cases,
             strategy=strategy,
             model_name=args.model,
+            model=model,
         )
 
         results.append(strategy_result)
