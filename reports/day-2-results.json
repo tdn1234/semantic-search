@@ -1,651 +1,21 @@
 [
   {
-    "strategy": "name",
-    "product_count": 12,
-    "evaluation_query_count": 20,
-    "embedding_dimensions": 384,
-    "index_latency_ms": 507.418,
-    "mean_query_latency_ms": 8.163,
-    "p95_query_latency_ms": 12.776,
-    "metrics": {
-      "recall@1": 0.875,
-      "precision@1": 0.9,
-      "recall@3": 1.0,
-      "precision@3": 0.35,
-      "recall@5": 1.0,
-      "precision@5": 0.21000000000000002,
-      "recall@10": 1.0,
-      "precision@10": 0.10500000000000001
-    },
-    "inspection": {
-      "product": {
-        "sku": "SHOE-RUN-001",
-        "name": "Velocity Men's Running Shoes",
-        "description": "Lightweight men's running shoes with breathable mesh and responsive cushioning for daily road running.",
-        "category": "Men > Shoes > Running",
-        "brand": "Velocity",
-        "color": "Black",
-        "price": 89.99,
-        "in_stock": true
-      },
-      "searchable_text": "Velocity Men's Running Shoes",
-      "vector_shape": [
-        384
-      ],
-      "first_10_vector_values": [
-        -0.012216,
-        0.034925,
-        -0.024714,
-        -0.003388,
-        0.001437,
-        -0.03096,
-        -0.076519,
-        -0.055064,
-        -0.073804,
-        -0.057849
-      ]
-    },
-    "queries": [
-      {
-        "query": "men's shoes for road running",
-        "relevant_skus": [
-          "SHOE-RUN-001"
-        ],
-        "retrieved_skus": [
-          "SHOE-RUN-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-002",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "JACKET-WP-001",
-          "BAG-TRAVEL-001",
-          "EARBUD-SPORT-001",
-          "BAG-LAPTOP-001",
-          "WATCH-FIT-001"
-        ],
-        "latency_ms": 10.056,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "women's running sneakers",
-        "relevant_skus": [
-          "SHOE-RUN-002"
-        ],
-        "retrieved_skus": [
-          "SHOE-RUN-002",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-001",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "EARBUD-SPORT-001",
-          "WATCH-FIT-001",
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "BOTTLE-INS-001"
-        ],
-        "latency_ms": 21.392,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "shoes for running on muddy trails",
-        "relevant_skus": [
-          "SHOE-TRAIL-001"
-        ],
-        "retrieved_skus": [
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-001",
-          "SHOE-RUN-002",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "JACKET-WP-001",
-          "EARBUD-SPORT-001",
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "HEADPHONE-NC-001"
-        ],
-        "latency_ms": 12.323,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "comfortable shoes for standing all day",
-        "relevant_skus": [
-          "SHOE-WALK-001"
-        ],
-        "retrieved_skus": [
-          "SHOE-WALK-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-002",
-          "SHOE-RUN-001",
-          "JACKET-DOWN-001",
-          "JACKET-WP-001",
-          "BAG-LAPTOP-001",
-          "EARBUD-SPORT-001",
-          "BOTTLE-INS-001",
-          "WATCH-FIT-001"
-        ],
-        "latency_ms": 6.885,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "waterproof jacket for rainy weather",
-        "relevant_skus": [
-          "JACKET-WP-001"
-        ],
-        "retrieved_skus": [
-          "JACKET-WP-001",
-          "JACKET-DOWN-001",
-          "BOTTLE-INS-001",
-          "BAG-TRAVEL-001",
-          "BAG-LAPTOP-001",
-          "SHOE-WALK-001",
-          "HEADPHONE-NC-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-001",
-          "SHOE-RUN-002"
-        ],
-        "latency_ms": 7.541,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "warm coat for freezing weather",
-        "relevant_skus": [
-          "JACKET-DOWN-001"
-        ],
-        "retrieved_skus": [
-          "JACKET-WP-001",
-          "JACKET-DOWN-001",
-          "BOTTLE-INS-001",
-          "SHOE-WALK-001",
-          "BAG-TRAVEL-001",
-          "SHOE-TRAIL-001",
-          "BAG-LAPTOP-001",
-          "HEADPHONE-NC-001",
-          "EARBUD-SPORT-001",
-          "SHOE-RUN-001"
-        ],
-        "latency_ms": 7.279,
-        "metrics": {
-          "recall@1": 0.0,
-          "precision@1": 0.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "work backpack with laptop compartment",
-        "relevant_skus": [
-          "BAG-LAPTOP-001"
-        ],
-        "retrieved_skus": [
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "JACKET-WP-001",
-          "BOTTLE-INS-001",
-          "SHOE-TRAIL-001",
-          "JACKET-DOWN-001",
-          "EARBUD-SPORT-001",
-          "SHOE-WALK-001",
-          "SHOE-RUN-001",
-          "WATCH-FIT-001"
-        ],
-        "latency_ms": 6.952,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "carry-on backpack for travel",
-        "relevant_skus": [
-          "BAG-TRAVEL-001"
-        ],
-        "retrieved_skus": [
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "JACKET-WP-001",
-          "JACKET-DOWN-001",
-          "SHOE-WALK-001",
-          "SHOE-TRAIL-001",
-          "BOTTLE-INS-001",
-          "SHOE-RUN-001",
-          "SHOE-RUN-002",
-          "EARBUD-SPORT-001"
-        ],
-        "latency_ms": 7.283,
-        "metrics": {
-          "recall@1": 0.0,
-          "precision@1": 0.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "headphones that block office noise",
-        "relevant_skus": [
-          "HEADPHONE-NC-001"
-        ],
-        "retrieved_skus": [
-          "HEADPHONE-NC-001",
-          "EARBUD-SPORT-001",
-          "SHOE-WALK-001",
-          "WATCH-FIT-001",
-          "BAG-LAPTOP-001",
-          "JACKET-WP-001",
-          "BOTTLE-INS-001",
-          "JACKET-DOWN-001",
-          "SHOE-RUN-002",
-          "SHOE-TRAIL-001"
-        ],
-        "latency_ms": 7.091,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "earbuds for running and gym",
-        "relevant_skus": [
-          "EARBUD-SPORT-001"
-        ],
-        "retrieved_skus": [
-          "EARBUD-SPORT-001",
-          "HEADPHONE-NC-001",
-          "SHOE-RUN-002",
-          "SHOE-RUN-001",
-          "SHOE-TRAIL-001",
-          "WATCH-FIT-001",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "JACKET-WP-001",
-          "BAG-LAPTOP-001"
-        ],
-        "latency_ms": 6.145,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "watch that tracks heart rate and sleep",
-        "relevant_skus": [
-          "WATCH-FIT-001"
-        ],
-        "retrieved_skus": [
-          "WATCH-FIT-001",
-          "JACKET-DOWN-001",
-          "SHOE-RUN-002",
-          "SHOE-WALK-001",
-          "SHOE-RUN-001",
-          "HEADPHONE-NC-001",
-          "EARBUD-SPORT-001",
-          "JACKET-WP-001",
-          "SHOE-TRAIL-001",
-          "BOTTLE-INS-001"
-        ],
-        "latency_ms": 6.251,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "bottle that keeps water cold all day",
-        "relevant_skus": [
-          "BOTTLE-INS-001"
-        ],
-        "retrieved_skus": [
-          "BOTTLE-INS-001",
-          "JACKET-WP-001",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "BAG-TRAVEL-001",
-          "BAG-LAPTOP-001",
-          "HEADPHONE-NC-001",
-          "WATCH-FIT-001",
-          "SHOE-TRAIL-001",
-          "EARBUD-SPORT-001"
-        ],
-        "latency_ms": 6.163,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "black footwear for everyday walking",
-        "relevant_skus": [
-          "SHOE-WALK-001"
-        ],
-        "retrieved_skus": [
-          "SHOE-WALK-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-002",
-          "SHOE-RUN-001",
-          "JACKET-DOWN-001",
-          "JACKET-WP-001",
-          "WATCH-FIT-001",
-          "EARBUD-SPORT-001",
-          "BAG-LAPTOP-001",
-          "BOTTLE-INS-001"
-        ],
-        "latency_ms": 7.472,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "lightweight breathable running footwear",
-        "relevant_skus": [
-          "SHOE-RUN-001",
-          "SHOE-RUN-002"
-        ],
-        "retrieved_skus": [
-          "SHOE-RUN-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-002",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "WATCH-FIT-001",
-          "JACKET-WP-001",
-          "EARBUD-SPORT-001",
-          "BOTTLE-INS-001",
-          "BAG-LAPTOP-001"
-        ],
-        "latency_ms": 7.289,
-        "metrics": {
-          "recall@1": 0.5,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.6666666666666666,
-          "recall@5": 1.0,
-          "precision@5": 0.4,
-          "recall@10": 1.0,
-          "precision@10": 0.2
-        }
-      },
-      {
-        "query": "bag for a 15 inch computer",
-        "relevant_skus": [
-          "BAG-LAPTOP-001"
-        ],
-        "retrieved_skus": [
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "SHOE-TRAIL-001",
-          "JACKET-WP-001",
-          "SHOE-WALK-001",
-          "BOTTLE-INS-001",
-          "JACKET-DOWN-001",
-          "EARBUD-SPORT-001",
-          "SHOE-RUN-001",
-          "HEADPHONE-NC-001"
-        ],
-        "latency_ms": 7.448,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "large 40 litre travel bag",
-        "relevant_skus": [
-          "BAG-TRAVEL-001"
-        ],
-        "retrieved_skus": [
-          "BAG-TRAVEL-001",
-          "BAG-LAPTOP-001",
-          "BOTTLE-INS-001",
-          "JACKET-WP-001",
-          "JACKET-DOWN-001",
-          "SHOE-TRAIL-001",
-          "SHOE-WALK-001",
-          "SHOE-RUN-001",
-          "SHOE-RUN-002",
-          "EARBUD-SPORT-001"
-        ],
-        "latency_ms": 7.114,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "wireless audio for a noisy flight",
-        "relevant_skus": [
-          "HEADPHONE-NC-001"
-        ],
-        "retrieved_skus": [
-          "HEADPHONE-NC-001",
-          "EARBUD-SPORT-001",
-          "BAG-TRAVEL-001",
-          "WATCH-FIT-001",
-          "SHOE-RUN-002",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001",
-          "BOTTLE-INS-001",
-          "SHOE-RUN-001"
-        ],
-        "latency_ms": 7.386,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "GPS device for tracking workouts",
-        "relevant_skus": [
-          "WATCH-FIT-001"
-        ],
-        "retrieved_skus": [
-          "WATCH-FIT-001",
-          "EARBUD-SPORT-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-002",
-          "SHOE-RUN-001",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "JACKET-WP-001"
-        ],
-        "latency_ms": 7.232,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "reusable stainless steel drink container",
-        "relevant_skus": [
-          "BOTTLE-INS-001"
-        ],
-        "retrieved_skus": [
-          "BOTTLE-INS-001",
-          "BAG-TRAVEL-001",
-          "JACKET-WP-001",
-          "BAG-LAPTOP-001",
-          "WATCH-FIT-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-002",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "SHOE-RUN-001"
-        ],
-        "latency_ms": 6.221,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      },
-      {
-        "query": "windproof outer layer for commuting",
-        "relevant_skus": [
-          "JACKET-WP-001"
-        ],
-        "retrieved_skus": [
-          "JACKET-WP-001",
-          "BAG-TRAVEL-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001",
-          "BOTTLE-INS-001",
-          "SHOE-WALK-001",
-          "EARBUD-SPORT-001",
-          "HEADPHONE-NC-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-001"
-        ],
-        "latency_ms": 7.733,
-        "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
-          "recall@5": 1.0,
-          "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
-        }
-      }
-    ]
-  },
-  {
     "strategy": "full",
-    "product_count": 12,
-    "evaluation_query_count": 20,
+    "product_count": 30,
+    "evaluation_query_count": 30,
     "embedding_dimensions": 384,
-    "index_latency_ms": 45.048,
-    "mean_query_latency_ms": 8.802,
-    "p95_query_latency_ms": 11.715,
+    "index_latency_ms": 207.624,
+    "mean_query_latency_ms": 11.804,
+    "p95_query_latency_ms": 20.392,
     "metrics": {
-      "recall@1": 0.975,
-      "precision@1": 1.0,
-      "recall@3": 1.0,
-      "precision@3": 0.35,
-      "recall@5": 1.0,
-      "precision@5": 0.21000000000000002,
       "recall@10": 1.0,
-      "precision@10": 0.10500000000000001
+      "precision@10": 0.11333333333333334,
+      "recall@5": 1.0,
+      "precision@5": 0.22666666666666668,
+      "recall@3": 1.0,
+      "precision@3": 0.37777777777777777,
+      "recall@1": 0.8166666666666667,
+      "precision@1": 0.8666666666666667
     },
     "inspection": {
       "product": {
@@ -685,24 +55,24 @@
           "SHOE-RUN-001",
           "SHOE-TRAIL-001",
           "SHOE-RUN-002",
+          "SHORT-RUN-001",
+          "SHOE-HIKE-001",
+          "SHOE-DRESS-001",
           "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "BAG-TRAVEL-001",
-          "BAG-LAPTOP-001",
-          "JACKET-WP-001",
-          "EARBUD-SPORT-001",
-          "WATCH-FIT-001"
+          "SOCK-RUN-001",
+          "BELT-HYD-001",
+          "GLOVES-WIN-001"
         ],
-        "latency_ms": 9.436,
+        "latency_ms": 13.392,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -715,23 +85,23 @@
           "SHOE-RUN-001",
           "SHOE-TRAIL-001",
           "SHOE-WALK-001",
-          "EARBUD-SPORT-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "WATCH-FIT-001",
-          "BOTTLE-INS-001"
+          "SHOE-DRESS-001",
+          "SOCK-RUN-001",
+          "SHOE-BBALL-001",
+          "SHOE-HIKE-001",
+          "BELT-HYD-001",
+          "SHORT-RUN-001"
         ],
-        "latency_ms": 11.679,
+        "latency_ms": 25.802,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -742,25 +112,25 @@
         "retrieved_skus": [
           "SHOE-TRAIL-001",
           "SHOE-RUN-001",
+          "SHOE-HIKE-001",
+          "SOCK-RUN-001",
           "SHOE-RUN-002",
+          "BELT-HYD-001",
+          "SHORT-RUN-001",
+          "SHOE-DRESS-001",
           "SHOE-WALK-001",
-          "EARBUD-SPORT-001",
-          "BAG-LAPTOP-001",
-          "JACKET-WP-001",
-          "JACKET-DOWN-001",
-          "BAG-TRAVEL-001",
-          "HEADPHONE-NC-001"
+          "SHOE-SANDAL-001"
         ],
-        "latency_ms": 11.138,
+        "latency_ms": 15.977,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -771,25 +141,25 @@
         "retrieved_skus": [
           "SHOE-WALK-001",
           "SHOE-TRAIL-001",
+          "SHOE-DRESS-001",
+          "SOCK-RUN-001",
+          "SHOE-HIKE-001",
+          "SHOE-BBALL-001",
           "SHOE-RUN-001",
           "SHOE-RUN-002",
-          "EARBUD-SPORT-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "BOTTLE-INS-001",
-          "HEADPHONE-NC-001"
+          "SHOE-SANDAL-001",
+          "GLOVES-WIN-001"
         ],
-        "latency_ms": 12.397,
+        "latency_ms": 8.776,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -801,24 +171,24 @@
           "JACKET-WP-001",
           "JACKET-DOWN-001",
           "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "SHOE-TRAIL-001",
-          "BOTTLE-INS-001",
-          "HEADPHONE-NC-001",
-          "SHOE-WALK-001",
-          "SHOE-RUN-001",
-          "EARBUD-SPORT-001"
+          "GLOVES-WIN-001",
+          "BAG-SLEEVE-001",
+          "SHOE-HIKE-001",
+          "BAG-TOTE-001",
+          "SHORT-RUN-001",
+          "SUN-001",
+          "BAG-TRAVEL-001"
         ],
-        "latency_ms": 11.095,
+        "latency_ms": 14.956,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -827,27 +197,27 @@
           "JACKET-DOWN-001"
         ],
         "retrieved_skus": [
+          "GLOVES-WIN-001",
           "JACKET-DOWN-001",
           "JACKET-WP-001",
           "BOTTLE-INS-001",
+          "SHOE-HIKE-001",
           "SHOE-TRAIL-001",
-          "SHOE-WALK-001",
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "EARBUD-SPORT-001",
-          "HEADPHONE-NC-001",
-          "SHOE-RUN-001"
+          "SOCK-RUN-001",
+          "BAG-TOTE-001",
+          "CAP-001",
+          "TOWEL-SPORT-001"
         ],
-        "latency_ms": 7.955,
+        "latency_ms": 7.696,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 0.0,
+          "precision@1": 0.0
         }
       },
       {
@@ -857,26 +227,26 @@
         ],
         "retrieved_skus": [
           "BAG-LAPTOP-001",
+          "BAG-SLEEVE-001",
           "BAG-TRAVEL-001",
+          "BELT-HYD-001",
+          "BAG-TOTE-001",
+          "SHOE-HIKE-001",
           "EARBUD-SPORT-001",
           "JACKET-WP-001",
-          "JACKET-DOWN-001",
-          "SHOE-TRAIL-001",
-          "BOTTLE-INS-001",
-          "HEADPHONE-NC-001",
-          "SHOE-RUN-001",
-          "SHOE-WALK-001"
+          "SHORT-RUN-001",
+          "JACKET-DOWN-001"
         ],
-        "latency_ms": 8.039,
+        "latency_ms": 8.297,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -887,25 +257,25 @@
         "retrieved_skus": [
           "BAG-TRAVEL-001",
           "BAG-LAPTOP-001",
+          "BAG-TOTE-001",
+          "BELT-HYD-001",
+          "BAG-SLEEVE-001",
           "JACKET-WP-001",
+          "SHORT-RUN-001",
+          "SHOE-HIKE-001",
           "JACKET-DOWN-001",
-          "SHOE-WALK-001",
-          "SHOE-TRAIL-001",
-          "EARBUD-SPORT-001",
-          "BOTTLE-INS-001",
-          "SHOE-RUN-001",
-          "HEADPHONE-NC-001"
+          "SHOE-SANDAL-001"
         ],
-        "latency_ms": 7.43,
+        "latency_ms": 8.334,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -915,26 +285,26 @@
         ],
         "retrieved_skus": [
           "HEADPHONE-NC-001",
+          "EARBUD-WIRED-001",
+          "SPEAKER-BT-001",
           "EARBUD-SPORT-001",
+          "WATCH-ANALOG-001",
           "BAG-LAPTOP-001",
           "SHOE-WALK-001",
-          "WATCH-FIT-001",
-          "SHOE-RUN-002",
-          "SHOE-RUN-001",
-          "JACKET-WP-001",
-          "JACKET-DOWN-001",
-          "SHOE-TRAIL-001"
+          "BAG-SLEEVE-001",
+          "BAND-RES-001",
+          "SOCK-RUN-001"
         ],
-        "latency_ms": 7.844,
+        "latency_ms": 8.59,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -946,24 +316,24 @@
           "EARBUD-SPORT-001",
           "HEADPHONE-NC-001",
           "SHOE-RUN-001",
+          "BAND-RES-001",
+          "EARBUD-WIRED-001",
           "SHOE-RUN-002",
-          "SHOE-WALK-001",
-          "SHOE-TRAIL-001",
-          "WATCH-FIT-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001",
-          "JACKET-WP-001"
+          "BELT-HYD-001",
+          "SOCK-RUN-001",
+          "SPEAKER-BT-001",
+          "SHOE-WALK-001"
         ],
-        "latency_ms": 7.05,
+        "latency_ms": 11.608,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -973,26 +343,26 @@
         ],
         "retrieved_skus": [
           "WATCH-FIT-001",
+          "WATCH-ANALOG-001",
           "SHOE-WALK-001",
           "SHOE-RUN-001",
+          "MAT-YOGA-001",
           "SHOE-RUN-002",
+          "SHORT-RUN-001",
           "EARBUD-SPORT-001",
-          "HEADPHONE-NC-001",
-          "JACKET-WP-001",
-          "BOTTLE-INS-001",
-          "JACKET-DOWN-001",
-          "BAG-TRAVEL-001"
+          "BELT-HYD-001",
+          "BAND-RES-001"
         ],
-        "latency_ms": 6.61,
+        "latency_ms": 8.624,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1002,26 +372,26 @@
         ],
         "retrieved_skus": [
           "BOTTLE-INS-001",
+          "BELT-HYD-001",
           "BAG-LAPTOP-001",
+          "GLOVES-WIN-001",
           "SHOE-WALK-001",
           "JACKET-DOWN-001",
+          "TOWEL-SPORT-001",
           "JACKET-WP-001",
           "HEADPHONE-NC-001",
-          "BAG-TRAVEL-001",
-          "SHOE-TRAIL-001",
-          "EARBUD-SPORT-001",
-          "SHOE-RUN-002"
+          "SOCK-RUN-001"
         ],
-        "latency_ms": 6.932,
+        "latency_ms": 9.298,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1031,26 +401,26 @@
         ],
         "retrieved_skus": [
           "SHOE-WALK-001",
+          "SOCK-RUN-001",
+          "SHOE-HIKE-001",
           "SHOE-TRAIL-001",
+          "SHOE-DRESS-001",
           "SHOE-RUN-001",
           "SHOE-RUN-002",
-          "EARBUD-SPORT-001",
-          "JACKET-DOWN-001",
-          "WATCH-FIT-001",
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "JACKET-WP-001"
+          "MAT-YOGA-001",
+          "GLOVES-WIN-001",
+          "SHOE-BBALL-001"
         ],
-        "latency_ms": 7.973,
+        "latency_ms": 8.542,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1063,24 +433,24 @@
           "SHOE-RUN-001",
           "SHOE-RUN-002",
           "SHOE-TRAIL-001",
+          "SOCK-RUN-001",
           "SHOE-WALK-001",
+          "SHORT-RUN-001",
           "EARBUD-SPORT-001",
-          "JACKET-DOWN-001",
-          "WATCH-FIT-001",
-          "BAG-LAPTOP-001",
-          "JACKET-WP-001",
-          "BOTTLE-INS-001"
+          "BELT-HYD-001",
+          "SHOE-DRESS-001",
+          "SHOE-HIKE-001"
         ],
-        "latency_ms": 8.841,
+        "latency_ms": 8.215,
         "metrics": {
-          "recall@1": 0.5,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.6666666666666666,
+          "recall@10": 1.0,
+          "precision@10": 0.2,
           "recall@5": 1.0,
           "precision@5": 0.4,
-          "recall@10": 1.0,
-          "precision@10": 0.2
+          "recall@3": 1.0,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.5,
+          "precision@1": 1.0
         }
       },
       {
@@ -1090,26 +460,26 @@
         ],
         "retrieved_skus": [
           "BAG-LAPTOP-001",
+          "BAG-SLEEVE-001",
+          "BAG-TOTE-001",
           "BAG-TRAVEL-001",
-          "HEADPHONE-NC-001",
-          "EARBUD-SPORT-001",
-          "SHOE-TRAIL-001",
-          "JACKET-WP-001",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "BOTTLE-INS-001",
-          "SHOE-RUN-001"
+          "BELT-HYD-001",
+          "CAP-001",
+          "SHORT-RUN-001",
+          "SHOE-HIKE-001",
+          "SHOE-BBALL-001",
+          "HEADPHONE-NC-001"
         ],
-        "latency_ms": 8.512,
+        "latency_ms": 8.209,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1120,25 +490,25 @@
         "retrieved_skus": [
           "BAG-TRAVEL-001",
           "BAG-LAPTOP-001",
+          "BAG-TOTE-001",
+          "BAG-SLEEVE-001",
+          "BELT-HYD-001",
+          "SHORT-RUN-001",
           "BOTTLE-INS-001",
-          "JACKET-DOWN-001",
-          "JACKET-WP-001",
-          "SHOE-WALK-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-001",
-          "HEADPHONE-NC-001",
-          "EARBUD-SPORT-001"
+          "SPEAKER-BT-001",
+          "TOWEL-SPORT-001",
+          "CAP-001"
         ],
-        "latency_ms": 8.926,
+        "latency_ms": 8.075,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1148,26 +518,26 @@
         ],
         "retrieved_skus": [
           "HEADPHONE-NC-001",
+          "SPEAKER-BT-001",
+          "EARBUD-WIRED-001",
           "EARBUD-SPORT-001",
+          "WATCH-ANALOG-001",
           "BAG-TRAVEL-001",
           "WATCH-FIT-001",
           "SHOE-RUN-002",
-          "SHOE-RUN-001",
-          "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001",
-          "JACKET-WP-001"
+          "TOWEL-SPORT-001",
+          "BELT-HYD-001"
         ],
-        "latency_ms": 8.554,
+        "latency_ms": 8.01,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1177,26 +547,26 @@
         ],
         "retrieved_skus": [
           "WATCH-FIT-001",
+          "BELT-HYD-001",
           "EARBUD-SPORT-001",
+          "BAND-RES-001",
           "SHOE-RUN-002",
+          "WATCH-ANALOG-001",
           "SHOE-TRAIL-001",
           "SHOE-RUN-001",
           "SHOE-WALK-001",
-          "HEADPHONE-NC-001",
-          "BAG-TRAVEL-001",
-          "BAG-LAPTOP-001",
-          "JACKET-WP-001"
+          "MAT-YOGA-001"
         ],
-        "latency_ms": 9.062,
+        "latency_ms": 8.074,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1206,26 +576,26 @@
         ],
         "retrieved_skus": [
           "BOTTLE-INS-001",
+          "WATCH-ANALOG-001",
+          "SPEAKER-BT-001",
           "BAG-TRAVEL-001",
+          "SUN-001",
           "BAG-LAPTOP-001",
-          "SHOE-WALK-001",
-          "SHOE-TRAIL-001",
-          "WATCH-FIT-001",
-          "SHOE-RUN-002",
-          "JACKET-WP-001",
-          "JACKET-DOWN-001",
-          "SHOE-RUN-001"
+          "CAP-001",
+          "BAG-TOTE-001",
+          "BAG-SLEEVE-001",
+          "BELT-HYD-001"
         ],
-        "latency_ms": 8.366,
+        "latency_ms": 7.076,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1236,46 +606,339 @@
         "retrieved_skus": [
           "JACKET-WP-001",
           "BAG-LAPTOP-001",
+          "BAG-TOTE-001",
           "JACKET-DOWN-001",
           "BAG-TRAVEL-001",
+          "GLOVES-WIN-001",
           "EARBUD-SPORT-001",
-          "HEADPHONE-NC-001",
-          "SHOE-TRAIL-001",
-          "BOTTLE-INS-001",
-          "SHOE-WALK-001",
-          "SHOE-RUN-001"
+          "BAG-SLEEVE-001",
+          "BELT-HYD-001",
+          "MAT-YOGA-001"
         ],
-        "latency_ms": 8.202,
+        "latency_ms": 9.98,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "something to wear in a downpour",
+        "relevant_skus": [
+          "JACKET-WP-001"
+        ],
+        "retrieved_skus": [
+          "JACKET-WP-001",
+          "JACKET-DOWN-001",
+          "GLOVES-WIN-001",
+          "BELT-HYD-001",
+          "SOCK-RUN-001",
+          "BOTTLE-INS-001",
+          "SHOE-TRAIL-001",
+          "SHORT-RUN-001",
+          "BAG-LAPTOP-001",
+          "SHOE-DRESS-001"
+        ],
+        "latency_ms": 6.92,
+        "metrics": {
           "recall@10": 1.0,
-          "precision@10": 0.1
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "insulated outerwear for winter",
+        "relevant_skus": [
+          "JACKET-DOWN-001"
+        ],
+        "retrieved_skus": [
+          "GLOVES-WIN-001",
+          "JACKET-DOWN-001",
+          "BOTTLE-INS-001",
+          "JACKET-WP-001",
+          "SOCK-RUN-001",
+          "SHOE-WALK-001",
+          "SHOE-TRAIL-001",
+          "SHOE-HIKE-001",
+          "BAG-SLEEVE-001",
+          "BAG-LAPTOP-001"
+        ],
+        "latency_ms": 8.758,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 0.0,
+          "precision@1": 0.0
+        }
+      },
+      {
+        "query": "shoes with strong grip for off-road",
+        "relevant_skus": [
+          "SHOE-TRAIL-001"
+        ],
+        "retrieved_skus": [
+          "SHOE-TRAIL-001",
+          "SHOE-HIKE-001",
+          "SHOE-WALK-001",
+          "SHOE-BBALL-001",
+          "SOCK-RUN-001",
+          "SHOE-RUN-001",
+          "SHOE-DRESS-001",
+          "GLOVES-WIN-001",
+          "SHOE-SANDAL-001",
+          "SHOE-RUN-002"
+        ],
+        "latency_ms": 15.231,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "cushioned footwear for women jogging",
+        "relevant_skus": [
+          "SHOE-RUN-002"
+        ],
+        "retrieved_skus": [
+          "SHOE-RUN-002",
+          "SOCK-RUN-001",
+          "SHOE-WALK-001",
+          "SHOE-RUN-001",
+          "SHOE-TRAIL-001",
+          "SHOE-DRESS-001",
+          "SHOE-HIKE-001",
+          "EARBUD-SPORT-001",
+          "SHOE-SANDAL-001",
+          "GLOVES-WIN-001"
+        ],
+        "latency_ms": 14.579,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "something to keep my coffee hot",
+        "relevant_skus": [
+          "BOTTLE-INS-001"
+        ],
+        "retrieved_skus": [
+          "BOTTLE-INS-001",
+          "JACKET-DOWN-001",
+          "BELT-HYD-001",
+          "CAP-001",
+          "TOWEL-SPORT-001",
+          "GLOVES-WIN-001",
+          "BAG-SLEEVE-001",
+          "BAG-TOTE-001",
+          "SHOE-WALK-001",
+          "BAG-LAPTOP-001"
+        ],
+        "latency_ms": 16.13,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "audio gear for the gym",
+        "relevant_skus": [
+          "EARBUD-SPORT-001"
+        ],
+        "retrieved_skus": [
+          "EARBUD-SPORT-001",
+          "BAND-RES-001",
+          "HEADPHONE-NC-001",
+          "EARBUD-WIRED-001",
+          "SPEAKER-BT-001",
+          "WATCH-FIT-001",
+          "BELT-HYD-001",
+          "SHOE-RUN-001",
+          "MAT-YOGA-001",
+          "SHOE-TRAIL-001"
+        ],
+        "latency_ms": 17.662,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "bag that fits in an overhead cabin locker",
+        "relevant_skus": [
+          "BAG-TRAVEL-001"
+        ],
+        "retrieved_skus": [
+          "BAG-LAPTOP-001",
+          "BAG-TRAVEL-001",
+          "BAG-TOTE-001",
+          "BAG-SLEEVE-001",
+          "BELT-HYD-001",
+          "CAP-001",
+          "JACKET-WP-001",
+          "BOTTLE-INS-001",
+          "TOWEL-SPORT-001",
+          "JACKET-DOWN-001"
+        ],
+        "latency_ms": 13.964,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 0.0,
+          "precision@1": 0.0
+        }
+      },
+      {
+        "query": "wireless earphones",
+        "relevant_skus": [
+          "HEADPHONE-NC-001",
+          "EARBUD-SPORT-001"
+        ],
+        "retrieved_skus": [
+          "EARBUD-WIRED-001",
+          "HEADPHONE-NC-001",
+          "EARBUD-SPORT-001",
+          "SPEAKER-BT-001",
+          "GLOVES-WIN-001",
+          "BAND-RES-001",
+          "SHOE-WALK-001",
+          "CAP-001",
+          "SHOE-DRESS-001",
+          "WATCH-ANALOG-001"
+        ],
+        "latency_ms": 22.626,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.2,
+          "recall@5": 1.0,
+          "precision@5": 0.4,
+          "recall@3": 1.0,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.0,
+          "precision@1": 0.0
+        }
+      },
+      {
+        "query": "backpacks",
+        "relevant_skus": [
+          "BAG-LAPTOP-001",
+          "BAG-TRAVEL-001"
+        ],
+        "retrieved_skus": [
+          "BAG-TRAVEL-001",
+          "BAG-LAPTOP-001",
+          "BELT-HYD-001",
+          "BAG-TOTE-001",
+          "BAG-SLEEVE-001",
+          "SHOE-TRAIL-001",
+          "SHOE-HIKE-001",
+          "SHORT-RUN-001",
+          "GLOVES-WIN-001",
+          "BAND-RES-001"
+        ],
+        "latency_ms": 15.601,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.2,
+          "recall@5": 1.0,
+          "precision@5": 0.4,
+          "recall@3": 1.0,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.5,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "men's jackets",
+        "relevant_skus": [
+          "JACKET-WP-001",
+          "JACKET-DOWN-001"
+        ],
+        "retrieved_skus": [
+          "JACKET-DOWN-001",
+          "JACKET-WP-001",
+          "SHORT-RUN-001",
+          "GLOVES-WIN-001",
+          "BAG-SLEEVE-001",
+          "SHOE-DRESS-001",
+          "SHOE-RUN-001",
+          "BAG-TOTE-001",
+          "SHOE-HIKE-001",
+          "CAP-001"
+        ],
+        "latency_ms": 15.121,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.2,
+          "recall@5": 1.0,
+          "precision@5": 0.4,
+          "recall@3": 1.0,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.5,
+          "precision@1": 1.0
         }
       }
     ]
   },
   {
     "strategy": "name_and_description",
-    "product_count": 12,
-    "evaluation_query_count": 20,
+    "product_count": 30,
+    "evaluation_query_count": 30,
     "embedding_dimensions": 384,
-    "index_latency_ms": 136.845,
-    "mean_query_latency_ms": 6.648,
-    "p95_query_latency_ms": 7.484,
+    "index_latency_ms": 41.978,
+    "mean_query_latency_ms": 7.655,
+    "p95_query_latency_ms": 8.235,
     "metrics": {
-      "recall@1": 0.975,
-      "precision@1": 1.0,
-      "recall@3": 1.0,
-      "precision@3": 0.35,
-      "recall@5": 1.0,
-      "precision@5": 0.21000000000000002,
       "recall@10": 1.0,
-      "precision@10": 0.10500000000000001
+      "precision@10": 0.11333333333333334,
+      "recall@5": 1.0,
+      "precision@5": 0.22666666666666668,
+      "recall@3": 0.9833333333333333,
+      "precision@3": 0.36666666666666664,
+      "recall@1": 0.8666666666666667,
+      "precision@1": 0.9
     },
     "inspection": {
       "product": {
@@ -1315,24 +978,24 @@
           "SHOE-RUN-001",
           "SHOE-TRAIL-001",
           "SHOE-RUN-002",
+          "SHORT-RUN-001",
+          "SHOE-HIKE-001",
+          "SHOE-DRESS-001",
           "SHOE-WALK-001",
-          "BAG-TRAVEL-001",
-          "EARBUD-SPORT-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001",
-          "JACKET-WP-001",
-          "WATCH-FIT-001"
+          "SOCK-RUN-001",
+          "BELT-HYD-001",
+          "SHOE-BBALL-001"
         ],
-        "latency_ms": 5.972,
+        "latency_ms": 7.585,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1345,23 +1008,23 @@
           "SHOE-RUN-001",
           "SHOE-TRAIL-001",
           "SHOE-WALK-001",
-          "EARBUD-SPORT-001",
-          "BAG-TRAVEL-001",
-          "BAG-LAPTOP-001",
-          "JACKET-DOWN-001",
-          "WATCH-FIT-001",
-          "HEADPHONE-NC-001"
+          "SHOE-DRESS-001",
+          "SHOE-BBALL-001",
+          "SOCK-RUN-001",
+          "SHOE-HIKE-001",
+          "SHORT-RUN-001",
+          "BELT-HYD-001"
         ],
-        "latency_ms": 6.746,
+        "latency_ms": 8.372,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1373,24 +1036,24 @@
           "SHOE-TRAIL-001",
           "SHOE-RUN-001",
           "SHOE-RUN-002",
+          "SHOE-HIKE-001",
+          "SOCK-RUN-001",
           "SHOE-WALK-001",
-          "EARBUD-SPORT-001",
-          "JACKET-WP-001",
-          "BAG-TRAVEL-001",
-          "BAG-LAPTOP-001",
-          "JACKET-DOWN-001",
-          "HEADPHONE-NC-001"
+          "SHOE-SANDAL-001",
+          "SHORT-RUN-001",
+          "BELT-HYD-001",
+          "SHOE-DRESS-001"
         ],
-        "latency_ms": 6.132,
+        "latency_ms": 7.733,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1401,25 +1064,25 @@
         "retrieved_skus": [
           "SHOE-WALK-001",
           "SHOE-TRAIL-001",
+          "SHOE-DRESS-001",
           "SHOE-RUN-001",
           "SHOE-RUN-002",
-          "EARBUD-SPORT-001",
-          "BAG-TRAVEL-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001",
-          "WATCH-FIT-001",
-          "JACKET-WP-001"
+          "SHOE-BBALL-001",
+          "SOCK-RUN-001",
+          "SHOE-HIKE-001",
+          "SHOE-SANDAL-001",
+          "SHORT-RUN-001"
         ],
-        "latency_ms": 6.114,
+        "latency_ms": 7.904,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1431,24 +1094,24 @@
           "JACKET-WP-001",
           "JACKET-DOWN-001",
           "BAG-LAPTOP-001",
+          "GLOVES-WIN-001",
+          "SHORT-RUN-001",
+          "BAG-SLEEVE-001",
           "SHOE-TRAIL-001",
-          "BAG-TRAVEL-001",
-          "EARBUD-SPORT-001",
-          "BOTTLE-INS-001",
-          "SHOE-RUN-001",
-          "SHOE-WALK-001",
-          "HEADPHONE-NC-001"
+          "SHOE-HIKE-001",
+          "SUN-001",
+          "SHOE-SANDAL-001"
         ],
-        "latency_ms": 6.593,
+        "latency_ms": 7.705,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1458,26 +1121,26 @@
         ],
         "retrieved_skus": [
           "JACKET-DOWN-001",
+          "GLOVES-WIN-001",
           "JACKET-WP-001",
           "BOTTLE-INS-001",
           "SHOE-TRAIL-001",
-          "EARBUD-SPORT-001",
-          "BAG-LAPTOP-001",
-          "BAG-TRAVEL-001",
-          "SHOE-WALK-001",
-          "SHOE-RUN-001",
-          "HEADPHONE-NC-001"
+          "SOCK-RUN-001",
+          "SHOE-HIKE-001",
+          "SUN-001",
+          "BAG-TOTE-001",
+          "TOWEL-SPORT-001"
         ],
-        "latency_ms": 6.838,
+        "latency_ms": 7.776,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1487,26 +1150,26 @@
         ],
         "retrieved_skus": [
           "BAG-LAPTOP-001",
+          "BAG-SLEEVE-001",
           "BAG-TRAVEL-001",
+          "BAG-TOTE-001",
+          "BELT-HYD-001",
+          "SHORT-RUN-001",
+          "SHOE-HIKE-001",
           "EARBUD-SPORT-001",
           "JACKET-WP-001",
-          "SHOE-TRAIL-001",
-          "BOTTLE-INS-001",
-          "JACKET-DOWN-001",
-          "SHOE-WALK-001",
-          "SHOE-RUN-001",
-          "HEADPHONE-NC-001"
+          "TOWEL-SPORT-001"
         ],
-        "latency_ms": 6.854,
+        "latency_ms": 7.706,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1517,25 +1180,25 @@
         "retrieved_skus": [
           "BAG-TRAVEL-001",
           "BAG-LAPTOP-001",
+          "BAG-TOTE-001",
+          "BELT-HYD-001",
+          "BAG-SLEEVE-001",
           "JACKET-WP-001",
+          "SHORT-RUN-001",
+          "SHOE-HIKE-001",
           "SHOE-WALK-001",
-          "JACKET-DOWN-001",
-          "SHOE-TRAIL-001",
-          "EARBUD-SPORT-001",
-          "BOTTLE-INS-001",
-          "SHOE-RUN-001",
-          "SHOE-RUN-002"
+          "SHOE-SANDAL-001"
         ],
-        "latency_ms": 7.482,
+        "latency_ms": 7.77,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1545,26 +1208,26 @@
         ],
         "retrieved_skus": [
           "HEADPHONE-NC-001",
+          "EARBUD-WIRED-001",
           "EARBUD-SPORT-001",
+          "SPEAKER-BT-001",
+          "WATCH-ANALOG-001",
           "SHOE-WALK-001",
           "BAG-LAPTOP-001",
-          "WATCH-FIT-001",
-          "SHOE-RUN-001",
-          "SHOE-RUN-002",
-          "SHOE-TRAIL-001",
-          "JACKET-WP-001",
-          "BOTTLE-INS-001"
+          "SHOE-DRESS-001",
+          "BAND-RES-001",
+          "SOCK-RUN-001"
         ],
-        "latency_ms": 7.001,
+        "latency_ms": 7.678,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1574,26 +1237,26 @@
         ],
         "retrieved_skus": [
           "EARBUD-SPORT-001",
+          "EARBUD-WIRED-001",
           "HEADPHONE-NC-001",
           "SHOE-RUN-001",
           "SHOE-RUN-002",
+          "BAND-RES-001",
+          "BELT-HYD-001",
           "SHOE-WALK-001",
-          "SHOE-TRAIL-001",
-          "WATCH-FIT-001",
-          "JACKET-WP-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001"
+          "SOCK-RUN-001",
+          "SHOE-TRAIL-001"
         ],
-        "latency_ms": 6.058,
+        "latency_ms": 6.937,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1603,26 +1266,26 @@
         ],
         "retrieved_skus": [
           "WATCH-FIT-001",
+          "WATCH-ANALOG-001",
+          "MAT-YOGA-001",
           "SHOE-RUN-001",
           "SHOE-RUN-002",
           "HEADPHONE-NC-001",
+          "SHORT-RUN-001",
           "SHOE-WALK-001",
-          "EARBUD-SPORT-001",
-          "BOTTLE-INS-001",
-          "JACKET-WP-001",
-          "BAG-TRAVEL-001",
-          "JACKET-DOWN-001"
+          "BELT-HYD-001",
+          "SPEAKER-BT-001"
         ],
-        "latency_ms": 5.964,
+        "latency_ms": 6.868,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1632,26 +1295,26 @@
         ],
         "retrieved_skus": [
           "BOTTLE-INS-001",
+          "BELT-HYD-001",
           "BAG-LAPTOP-001",
           "JACKET-DOWN-001",
           "JACKET-WP-001",
+          "GLOVES-WIN-001",
           "SHOE-WALK-001",
+          "TOWEL-SPORT-001",
           "BAG-TRAVEL-001",
-          "EARBUD-SPORT-001",
-          "SHOE-TRAIL-001",
-          "HEADPHONE-NC-001",
-          "WATCH-FIT-001"
+          "EARBUD-SPORT-001"
         ],
-        "latency_ms": 5.991,
+        "latency_ms": 6.659,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1661,26 +1324,26 @@
         ],
         "retrieved_skus": [
           "SHOE-WALK-001",
+          "SHOE-HIKE-001",
           "SHOE-TRAIL-001",
+          "SOCK-RUN-001",
           "SHOE-RUN-001",
           "SHOE-RUN-002",
-          "EARBUD-SPORT-001",
-          "BAG-TRAVEL-001",
-          "JACKET-DOWN-001",
-          "WATCH-FIT-001",
-          "JACKET-WP-001",
-          "BAG-LAPTOP-001"
+          "SHOE-DRESS-001",
+          "SHOE-BBALL-001",
+          "SHOE-SANDAL-001",
+          "MAT-YOGA-001"
         ],
-        "latency_ms": 7.072,
+        "latency_ms": 7.828,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1693,24 +1356,24 @@
           "SHOE-RUN-001",
           "SHOE-RUN-002",
           "SHOE-TRAIL-001",
+          "SOCK-RUN-001",
           "SHOE-WALK-001",
+          "SHORT-RUN-001",
           "EARBUD-SPORT-001",
-          "BAG-TRAVEL-001",
-          "JACKET-WP-001",
-          "JACKET-DOWN-001",
-          "BAG-LAPTOP-001",
-          "WATCH-FIT-001"
+          "BELT-HYD-001",
+          "SHOE-HIKE-001",
+          "SHOE-DRESS-001"
         ],
-        "latency_ms": 6.972,
+        "latency_ms": 7.958,
         "metrics": {
-          "recall@1": 0.5,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.6666666666666666,
+          "recall@10": 1.0,
+          "precision@10": 0.2,
           "recall@5": 1.0,
           "precision@5": 0.4,
-          "recall@10": 1.0,
-          "precision@10": 0.2
+          "recall@3": 1.0,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.5,
+          "precision@1": 1.0
         }
       },
       {
@@ -1720,26 +1383,26 @@
         ],
         "retrieved_skus": [
           "BAG-LAPTOP-001",
+          "BAG-SLEEVE-001",
+          "BAG-TOTE-001",
           "BAG-TRAVEL-001",
-          "SHOE-TRAIL-001",
-          "EARBUD-SPORT-001",
-          "JACKET-WP-001",
-          "HEADPHONE-NC-001",
-          "SHOE-WALK-001",
-          "SHOE-RUN-001",
-          "SHOE-RUN-002",
-          "JACKET-DOWN-001"
+          "BELT-HYD-001",
+          "SHORT-RUN-001",
+          "CAP-001",
+          "TOWEL-SPORT-001",
+          "SHOE-HIKE-001",
+          "SHOE-BBALL-001"
         ],
-        "latency_ms": 7.514,
+        "latency_ms": 8.202,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1750,25 +1413,948 @@
         "retrieved_skus": [
           "BAG-TRAVEL-001",
           "BAG-LAPTOP-001",
+          "BAG-TOTE-001",
+          "BAG-SLEEVE-001",
+          "BELT-HYD-001",
+          "SHORT-RUN-001",
+          "TOWEL-SPORT-001",
           "BOTTLE-INS-001",
+          "SPEAKER-BT-001",
+          "JACKET-WP-001"
+        ],
+        "latency_ms": 8.114,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "wireless audio for a noisy flight",
+        "relevant_skus": [
+          "HEADPHONE-NC-001"
+        ],
+        "retrieved_skus": [
+          "HEADPHONE-NC-001",
+          "EARBUD-WIRED-001",
+          "SPEAKER-BT-001",
+          "EARBUD-SPORT-001",
+          "WATCH-ANALOG-001",
+          "BAG-TRAVEL-001",
+          "WATCH-FIT-001",
+          "SHOE-RUN-002",
+          "SHOE-WALK-001",
+          "SHOE-RUN-001"
+        ],
+        "latency_ms": 8.066,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "GPS device for tracking workouts",
+        "relevant_skus": [
+          "WATCH-FIT-001"
+        ],
+        "retrieved_skus": [
+          "WATCH-FIT-001",
+          "BELT-HYD-001",
+          "WATCH-ANALOG-001",
+          "EARBUD-SPORT-001",
+          "SHOE-RUN-002",
+          "SHOE-WALK-001",
+          "SHOE-RUN-001",
+          "BAND-RES-001",
+          "MAT-YOGA-001",
+          "SHOE-HIKE-001"
+        ],
+        "latency_ms": 8.102,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "reusable stainless steel drink container",
+        "relevant_skus": [
+          "BOTTLE-INS-001"
+        ],
+        "retrieved_skus": [
+          "BOTTLE-INS-001",
+          "WATCH-ANALOG-001",
+          "SPEAKER-BT-001",
+          "BAG-TRAVEL-001",
+          "BAG-LAPTOP-001",
+          "BAG-TOTE-001",
+          "BAG-SLEEVE-001",
+          "BELT-HYD-001",
+          "SUN-001",
+          "CAP-001"
+        ],
+        "latency_ms": 7.088,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "windproof outer layer for commuting",
+        "relevant_skus": [
+          "JACKET-WP-001"
+        ],
+        "retrieved_skus": [
+          "JACKET-WP-001",
+          "BAG-TOTE-001",
+          "BAG-LAPTOP-001",
+          "JACKET-DOWN-001",
+          "GLOVES-WIN-001",
+          "BAG-SLEEVE-001",
+          "BAG-TRAVEL-001",
+          "EARBUD-SPORT-001",
+          "BELT-HYD-001",
+          "SUN-001"
+        ],
+        "latency_ms": 7.31,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "something to wear in a downpour",
+        "relevant_skus": [
+          "JACKET-WP-001"
+        ],
+        "retrieved_skus": [
           "JACKET-WP-001",
           "JACKET-DOWN-001",
+          "GLOVES-WIN-001",
+          "SHORT-RUN-001",
+          "SHOE-TRAIL-001",
+          "BELT-HYD-001",
+          "SOCK-RUN-001",
+          "BAG-LAPTOP-001",
+          "SUN-001",
+          "BOTTLE-INS-001"
+        ],
+        "latency_ms": 7.062,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "insulated outerwear for winter",
+        "relevant_skus": [
+          "JACKET-DOWN-001"
+        ],
+        "retrieved_skus": [
+          "GLOVES-WIN-001",
+          "JACKET-DOWN-001",
+          "BOTTLE-INS-001",
+          "JACKET-WP-001",
+          "SHOE-TRAIL-001",
+          "SOCK-RUN-001",
+          "SHOE-HIKE-001",
           "SHOE-WALK-001",
+          "BAG-SLEEVE-001",
+          "BAG-LAPTOP-001"
+        ],
+        "latency_ms": 7.954,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 0.0,
+          "precision@1": 0.0
+        }
+      },
+      {
+        "query": "shoes with strong grip for off-road",
+        "relevant_skus": [
+          "SHOE-TRAIL-001"
+        ],
+        "retrieved_skus": [
+          "SHOE-TRAIL-001",
+          "SHOE-HIKE-001",
+          "SHOE-WALK-001",
+          "SHOE-RUN-001",
+          "SHOE-BBALL-001",
+          "SHOE-RUN-002",
+          "SHOE-DRESS-001",
+          "SHOE-SANDAL-001",
+          "SOCK-RUN-001",
+          "GLOVES-WIN-001"
+        ],
+        "latency_ms": 7.042,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "cushioned footwear for women jogging",
+        "relevant_skus": [
+          "SHOE-RUN-002"
+        ],
+        "retrieved_skus": [
+          "SHOE-RUN-002",
+          "SOCK-RUN-001",
+          "SHOE-RUN-001",
+          "SHOE-WALK-001",
+          "SHOE-TRAIL-001",
+          "SHOE-DRESS-001",
+          "SHOE-HIKE-001",
+          "SHOE-SANDAL-001",
+          "EARBUD-SPORT-001",
+          "SHORT-RUN-001"
+        ],
+        "latency_ms": 7.109,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "something to keep my coffee hot",
+        "relevant_skus": [
+          "BOTTLE-INS-001"
+        ],
+        "retrieved_skus": [
+          "BOTTLE-INS-001",
+          "JACKET-DOWN-001",
+          "BAG-SLEEVE-001",
+          "BAG-TOTE-001",
+          "BELT-HYD-001",
+          "TOWEL-SPORT-001",
+          "BAG-LAPTOP-001",
+          "CAP-001",
+          "SHOE-WALK-001",
+          "WATCH-ANALOG-001"
+        ],
+        "latency_ms": 8.112,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "audio gear for the gym",
+        "relevant_skus": [
+          "EARBUD-SPORT-001"
+        ],
+        "retrieved_skus": [
+          "EARBUD-SPORT-001",
+          "EARBUD-WIRED-001",
+          "HEADPHONE-NC-001",
+          "BAND-RES-001",
+          "WATCH-FIT-001",
+          "SPEAKER-BT-001",
+          "BELT-HYD-001",
+          "SHOE-RUN-001",
+          "SHOE-WALK-001",
+          "SHOE-RUN-002"
+        ],
+        "latency_ms": 8.048,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "bag that fits in an overhead cabin locker",
+        "relevant_skus": [
+          "BAG-TRAVEL-001"
+        ],
+        "retrieved_skus": [
+          "BAG-TRAVEL-001",
+          "BAG-LAPTOP-001",
+          "BAG-TOTE-001",
+          "BAG-SLEEVE-001",
+          "BELT-HYD-001",
+          "SHORT-RUN-001",
+          "TOWEL-SPORT-001",
+          "JACKET-WP-001",
+          "CAP-001",
+          "BOTTLE-INS-001"
+        ],
+        "latency_ms": 7.12,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "wireless earphones",
+        "relevant_skus": [
+          "HEADPHONE-NC-001",
+          "EARBUD-SPORT-001"
+        ],
+        "retrieved_skus": [
+          "EARBUD-WIRED-001",
+          "EARBUD-SPORT-001",
+          "HEADPHONE-NC-001",
+          "SPEAKER-BT-001",
+          "BAND-RES-001",
+          "SHOE-WALK-001",
+          "GLOVES-WIN-001",
+          "SHOE-DRESS-001",
+          "BELT-HYD-001",
+          "WATCH-ANALOG-001"
+        ],
+        "latency_ms": 7.81,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.2,
+          "recall@5": 1.0,
+          "precision@5": 0.4,
+          "recall@3": 1.0,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.0,
+          "precision@1": 0.0
+        }
+      },
+      {
+        "query": "backpacks",
+        "relevant_skus": [
+          "BAG-LAPTOP-001",
+          "BAG-TRAVEL-001"
+        ],
+        "retrieved_skus": [
+          "BAG-TRAVEL-001",
+          "BAG-LAPTOP-001",
+          "BELT-HYD-001",
+          "BAG-TOTE-001",
+          "SHOE-HIKE-001",
+          "BAG-SLEEVE-001",
+          "SHORT-RUN-001",
+          "SHOE-TRAIL-001",
+          "SHOE-WALK-001",
+          "SHOE-SANDAL-001"
+        ],
+        "latency_ms": 7.773,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.2,
+          "recall@5": 1.0,
+          "precision@5": 0.4,
+          "recall@3": 1.0,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.5,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "men's jackets",
+        "relevant_skus": [
+          "JACKET-WP-001",
+          "JACKET-DOWN-001"
+        ],
+        "retrieved_skus": [
+          "SHORT-RUN-001",
+          "JACKET-DOWN-001",
+          "GLOVES-WIN-001",
+          "SHOE-RUN-001",
+          "JACKET-WP-001",
+          "BAG-TOTE-001",
+          "BAG-SLEEVE-001",
+          "SHOE-DRESS-001",
+          "CAP-001",
+          "SHOE-HIKE-001"
+        ],
+        "latency_ms": 8.262,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.2,
+          "recall@5": 1.0,
+          "precision@5": 0.4,
+          "recall@3": 0.5,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 0.0,
+          "precision@1": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "strategy": "name",
+    "product_count": 30,
+    "evaluation_query_count": 30,
+    "embedding_dimensions": 384,
+    "index_latency_ms": 21.917,
+    "mean_query_latency_ms": 7.8,
+    "p95_query_latency_ms": 8.403,
+    "metrics": {
+      "recall@10": 1.0,
+      "precision@10": 0.11333333333333334,
+      "recall@5": 1.0,
+      "precision@5": 0.22666666666666668,
+      "recall@3": 0.9666666666666667,
+      "precision@3": 0.36666666666666664,
+      "recall@1": 0.8,
+      "precision@1": 0.8666666666666667
+    },
+    "inspection": {
+      "product": {
+        "sku": "SHOE-RUN-001",
+        "name": "Velocity Men's Running Shoes",
+        "description": "Lightweight men's running shoes with breathable mesh and responsive cushioning for daily road running.",
+        "category": "Men > Shoes > Running",
+        "brand": "Velocity",
+        "color": "Black",
+        "price": 89.99,
+        "in_stock": true
+      },
+      "searchable_text": "Velocity Men's Running Shoes",
+      "vector_shape": [
+        384
+      ],
+      "first_10_vector_values": [
+        -0.012216,
+        0.034925,
+        -0.024714,
+        -0.003388,
+        0.001437,
+        -0.03096,
+        -0.076519,
+        -0.055064,
+        -0.073804,
+        -0.057849
+      ]
+    },
+    "queries": [
+      {
+        "query": "men's shoes for road running",
+        "relevant_skus": [
+          "SHOE-RUN-001"
+        ],
+        "retrieved_skus": [
+          "SHOE-RUN-001",
+          "SHOE-TRAIL-001",
+          "SHORT-RUN-001",
+          "SHOE-RUN-002",
+          "SHOE-DRESS-001",
+          "SHOE-WALK-001",
+          "SHOE-HIKE-001",
+          "SHOE-BBALL-001",
+          "SOCK-RUN-001",
+          "JACKET-DOWN-001"
+        ],
+        "latency_ms": 7.485,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "women's running sneakers",
+        "relevant_skus": [
+          "SHOE-RUN-002"
+        ],
+        "retrieved_skus": [
+          "SHOE-RUN-002",
+          "SHOE-TRAIL-001",
+          "SHOE-RUN-001",
+          "SHOE-BBALL-001",
+          "SHOE-WALK-001",
+          "SHOE-DRESS-001",
+          "SHORT-RUN-001",
+          "SOCK-RUN-001",
+          "SHOE-HIKE-001",
+          "SHOE-SANDAL-001"
+        ],
+        "latency_ms": 8.446,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "shoes for running on muddy trails",
+        "relevant_skus": [
+          "SHOE-TRAIL-001"
+        ],
+        "retrieved_skus": [
+          "SHOE-TRAIL-001",
+          "SHOE-RUN-001",
+          "SHOE-HIKE-001",
+          "SHOE-RUN-002",
+          "SHOE-WALK-001",
+          "SOCK-RUN-001",
+          "SHOE-DRESS-001",
+          "SHOE-BBALL-001",
+          "SHORT-RUN-001",
+          "SHOE-SANDAL-001"
+        ],
+        "latency_ms": 8.605,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "comfortable shoes for standing all day",
+        "relevant_skus": [
+          "SHOE-WALK-001"
+        ],
+        "retrieved_skus": [
+          "SHOE-WALK-001",
+          "SHOE-TRAIL-001",
+          "SOCK-RUN-001",
+          "SHOE-BBALL-001",
+          "SHOE-DRESS-001",
+          "SHOE-RUN-002",
+          "SHOE-RUN-001",
+          "SHOE-HIKE-001",
+          "SHOE-SANDAL-001",
+          "SHORT-RUN-001"
+        ],
+        "latency_ms": 8.352,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "waterproof jacket for rainy weather",
+        "relevant_skus": [
+          "JACKET-WP-001"
+        ],
+        "retrieved_skus": [
+          "JACKET-WP-001",
+          "JACKET-DOWN-001",
+          "SHOE-HIKE-001",
+          "BOTTLE-INS-001",
+          "BAG-TRAVEL-001",
+          "BAG-SLEEVE-001",
+          "SUN-001",
+          "BAG-TOTE-001",
+          "GLOVES-WIN-001",
+          "BAG-LAPTOP-001"
+        ],
+        "latency_ms": 8.093,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "warm coat for freezing weather",
+        "relevant_skus": [
+          "JACKET-DOWN-001"
+        ],
+        "retrieved_skus": [
+          "JACKET-WP-001",
+          "JACKET-DOWN-001",
+          "GLOVES-WIN-001",
+          "BOTTLE-INS-001",
+          "SHOE-HIKE-001",
+          "SOCK-RUN-001",
+          "SUN-001",
+          "BAG-TOTE-001",
+          "SHOE-WALK-001",
+          "BAG-TRAVEL-001"
+        ],
+        "latency_ms": 8.053,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 0.0,
+          "precision@1": 0.0
+        }
+      },
+      {
+        "query": "work backpack with laptop compartment",
+        "relevant_skus": [
+          "BAG-LAPTOP-001"
+        ],
+        "retrieved_skus": [
+          "BAG-LAPTOP-001",
+          "BAG-SLEEVE-001",
+          "BAG-TRAVEL-001",
+          "BAG-TOTE-001",
+          "SHOE-HIKE-001",
+          "BELT-HYD-001",
+          "JACKET-WP-001",
+          "CAP-001",
+          "BOTTLE-INS-001",
+          "SHOE-TRAIL-001"
+        ],
+        "latency_ms": 8.076,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "carry-on backpack for travel",
+        "relevant_skus": [
+          "BAG-TRAVEL-001"
+        ],
+        "retrieved_skus": [
+          "BAG-LAPTOP-001",
+          "BAG-TRAVEL-001",
+          "BAG-TOTE-001",
+          "BAG-SLEEVE-001",
+          "JACKET-WP-001",
+          "CAP-001",
+          "JACKET-DOWN-001",
+          "SHOE-HIKE-001",
+          "SHOE-WALK-001",
+          "SHOE-TRAIL-001"
+        ],
+        "latency_ms": 8.042,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 0.0,
+          "precision@1": 0.0
+        }
+      },
+      {
+        "query": "headphones that block office noise",
+        "relevant_skus": [
+          "HEADPHONE-NC-001"
+        ],
+        "retrieved_skus": [
+          "HEADPHONE-NC-001",
+          "EARBUD-WIRED-001",
+          "EARBUD-SPORT-001",
+          "SPEAKER-BT-001",
+          "WATCH-ANALOG-001",
+          "BAND-RES-001",
+          "SHOE-WALK-001",
+          "GLOVES-WIN-001",
+          "SHOE-DRESS-001",
+          "WATCH-FIT-001"
+        ],
+        "latency_ms": 8.128,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "earbuds for running and gym",
+        "relevant_skus": [
+          "EARBUD-SPORT-001"
+        ],
+        "retrieved_skus": [
+          "EARBUD-SPORT-001",
+          "EARBUD-WIRED-001",
+          "HEADPHONE-NC-001",
+          "SHOE-RUN-002",
+          "SHOE-RUN-001",
+          "SHORT-RUN-001",
+          "SPEAKER-BT-001",
+          "BAND-RES-001",
+          "SHOE-TRAIL-001",
+          "WATCH-FIT-001"
+        ],
+        "latency_ms": 7.16,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "watch that tracks heart rate and sleep",
+        "relevant_skus": [
+          "WATCH-FIT-001"
+        ],
+        "retrieved_skus": [
+          "WATCH-FIT-001",
+          "WATCH-ANALOG-001",
+          "SHORT-RUN-001",
+          "MAT-YOGA-001",
+          "JACKET-DOWN-001",
+          "SHOE-RUN-002",
+          "SHOE-WALK-001",
+          "SHOE-RUN-001",
+          "BELT-HYD-001",
+          "HEADPHONE-NC-001"
+        ],
+        "latency_ms": 6.981,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "bottle that keeps water cold all day",
+        "relevant_skus": [
+          "BOTTLE-INS-001"
+        ],
+        "retrieved_skus": [
+          "BOTTLE-INS-001",
+          "JACKET-WP-001",
+          "TOWEL-SPORT-001",
+          "BELT-HYD-001",
+          "GLOVES-WIN-001",
+          "SHOE-WALK-001",
+          "CAP-001",
+          "JACKET-DOWN-001",
+          "SOCK-RUN-001",
+          "BAG-TOTE-001"
+        ],
+        "latency_ms": 7.151,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "black footwear for everyday walking",
+        "relevant_skus": [
+          "SHOE-WALK-001"
+        ],
+        "retrieved_skus": [
+          "SHOE-WALK-001",
+          "SOCK-RUN-001",
+          "SHOE-TRAIL-001",
+          "SHOE-DRESS-001",
+          "SHOE-HIKE-001",
+          "SHOE-RUN-002",
+          "SHOE-RUN-001",
+          "SHOE-BBALL-001",
+          "SHOE-SANDAL-001",
+          "JACKET-DOWN-001"
+        ],
+        "latency_ms": 8.222,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "lightweight breathable running footwear",
+        "relevant_skus": [
+          "SHOE-RUN-001",
+          "SHOE-RUN-002"
+        ],
+        "retrieved_skus": [
           "SHOE-RUN-001",
           "SHOE-TRAIL-001",
           "SHOE-RUN-002",
-          "EARBUD-SPORT-001"
+          "SHOE-WALK-001",
+          "SOCK-RUN-001",
+          "SHORT-RUN-001",
+          "SHOE-DRESS-001",
+          "SHOE-BBALL-001",
+          "JACKET-DOWN-001",
+          "SHOE-HIKE-001"
         ],
-        "latency_ms": 7.022,
+        "latency_ms": 8.111,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
+          "recall@10": 1.0,
+          "precision@10": 0.2,
+          "recall@5": 1.0,
+          "precision@5": 0.4,
           "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.5,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "bag for a 15 inch computer",
+        "relevant_skus": [
+          "BAG-LAPTOP-001"
+        ],
+        "retrieved_skus": [
+          "BAG-LAPTOP-001",
+          "BAG-SLEEVE-001",
+          "BAG-TOTE-001",
+          "BAG-TRAVEL-001",
+          "CAP-001",
+          "SHOE-BBALL-001",
+          "SHOE-HIKE-001",
+          "SHOE-TRAIL-001",
+          "BELT-HYD-001",
+          "GLOVES-WIN-001"
+        ],
+        "latency_ms": 8.19,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "large 40 litre travel bag",
+        "relevant_skus": [
+          "BAG-TRAVEL-001"
+        ],
+        "retrieved_skus": [
+          "BAG-TRAVEL-001",
+          "BAG-LAPTOP-001",
+          "BAG-TOTE-001",
+          "CAP-001",
+          "BOTTLE-INS-001",
+          "BAG-SLEEVE-001",
+          "BELT-HYD-001",
+          "JACKET-WP-001",
+          "TOWEL-SPORT-001",
+          "JACKET-DOWN-001"
+        ],
+        "latency_ms": 8.067,
+        "metrics": {
           "recall@10": 1.0,
-          "precision@10": 0.1
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1779,25 +2365,25 @@
         "retrieved_skus": [
           "HEADPHONE-NC-001",
           "EARBUD-SPORT-001",
+          "SPEAKER-BT-001",
+          "EARBUD-WIRED-001",
+          "WATCH-ANALOG-001",
           "BAG-TRAVEL-001",
           "WATCH-FIT-001",
           "SHOE-RUN-002",
           "SHOE-WALK-001",
-          "SHOE-RUN-001",
-          "BAG-LAPTOP-001",
-          "JACKET-WP-001",
           "JACKET-DOWN-001"
         ],
-        "latency_ms": 7.085,
+        "latency_ms": 8.091,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1807,26 +2393,26 @@
         ],
         "retrieved_skus": [
           "WATCH-FIT-001",
+          "WATCH-ANALOG-001",
+          "BELT-HYD-001",
           "EARBUD-SPORT-001",
-          "SHOE-RUN-002",
-          "SHOE-WALK-001",
-          "SHOE-RUN-001",
           "SHOE-TRAIL-001",
-          "HEADPHONE-NC-001",
-          "BAG-TRAVEL-001",
-          "BAG-LAPTOP-001",
-          "JACKET-WP-001"
+          "SHOE-RUN-002",
+          "SHORT-RUN-001",
+          "GLOVES-WIN-001",
+          "SHOE-RUN-001",
+          "SHOE-WALK-001"
         ],
-        "latency_ms": 6.852,
+        "latency_ms": 7.979,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1836,26 +2422,26 @@
         ],
         "retrieved_skus": [
           "BOTTLE-INS-001",
+          "SPEAKER-BT-001",
+          "CAP-001",
+          "WATCH-ANALOG-001",
           "BAG-TRAVEL-001",
-          "BAG-LAPTOP-001",
-          "SHOE-WALK-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-002",
-          "JACKET-WP-001",
-          "WATCH-FIT-001",
-          "JACKET-DOWN-001",
-          "SHOE-RUN-001"
+          "BAG-TOTE-001",
+          "BAG-SLEEVE-001",
+          "TOWEL-SPORT-001",
+          "SUN-001",
+          "JACKET-WP-001"
         ],
-        "latency_ms": 6.416,
+        "latency_ms": 7.113,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
-          "recall@10": 1.0,
-          "precision@10": 0.1
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
         }
       },
       {
@@ -1865,26 +2451,319 @@
         ],
         "retrieved_skus": [
           "JACKET-WP-001",
-          "BAG-LAPTOP-001",
-          "JACKET-DOWN-001",
+          "BAG-TOTE-001",
           "BAG-TRAVEL-001",
-          "EARBUD-SPORT-001",
-          "HEADPHONE-NC-001",
-          "SHOE-TRAIL-001",
-          "SHOE-RUN-001",
-          "SHOE-WALK-001",
-          "SHOE-RUN-002"
+          "JACKET-DOWN-001",
+          "GLOVES-WIN-001",
+          "BAG-LAPTOP-001",
+          "MAT-YOGA-001",
+          "SUN-001",
+          "BELT-HYD-001",
+          "BOTTLE-INS-001"
         ],
-        "latency_ms": 6.293,
+        "latency_ms": 7.145,
         "metrics": {
-          "recall@1": 1.0,
-          "precision@1": 1.0,
-          "recall@3": 1.0,
-          "precision@3": 0.3333333333333333,
+          "recall@10": 1.0,
+          "precision@10": 0.1,
           "recall@5": 1.0,
           "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "something to wear in a downpour",
+        "relevant_skus": [
+          "JACKET-WP-001"
+        ],
+        "retrieved_skus": [
+          "JACKET-WP-001",
+          "JACKET-DOWN-001",
+          "BOTTLE-INS-001",
+          "GLOVES-WIN-001",
+          "SOCK-RUN-001",
+          "TOWEL-SPORT-001",
+          "SUN-001",
+          "SHOE-HIKE-001",
+          "BAG-TOTE-001",
+          "SHOE-SANDAL-001"
+        ],
+        "latency_ms": 6.943,
+        "metrics": {
           "recall@10": 1.0,
-          "precision@10": 0.1
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "insulated outerwear for winter",
+        "relevant_skus": [
+          "JACKET-DOWN-001"
+        ],
+        "retrieved_skus": [
+          "BOTTLE-INS-001",
+          "GLOVES-WIN-001",
+          "JACKET-WP-001",
+          "JACKET-DOWN-001",
+          "SOCK-RUN-001",
+          "SHOE-WALK-001",
+          "SHOE-HIKE-001",
+          "SHOE-TRAIL-001",
+          "SHOE-DRESS-001",
+          "SUN-001"
+        ],
+        "latency_ms": 8.091,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 0.0,
+          "precision@3": 0.0,
+          "recall@1": 0.0,
+          "precision@1": 0.0
+        }
+      },
+      {
+        "query": "shoes with strong grip for off-road",
+        "relevant_skus": [
+          "SHOE-TRAIL-001"
+        ],
+        "retrieved_skus": [
+          "SHOE-TRAIL-001",
+          "SHOE-WALK-001",
+          "SHOE-BBALL-001",
+          "SHOE-HIKE-001",
+          "SHOE-RUN-001",
+          "SHOE-DRESS-001",
+          "SHOE-RUN-002",
+          "SOCK-RUN-001",
+          "SHOE-SANDAL-001",
+          "GLOVES-WIN-001"
+        ],
+        "latency_ms": 7.159,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "cushioned footwear for women jogging",
+        "relevant_skus": [
+          "SHOE-RUN-002"
+        ],
+        "retrieved_skus": [
+          "SHOE-RUN-002",
+          "SOCK-RUN-001",
+          "SHOE-WALK-001",
+          "SHOE-RUN-001",
+          "SHOE-TRAIL-001",
+          "SHOE-DRESS-001",
+          "SHOE-HIKE-001",
+          "SHOE-SANDAL-001",
+          "SHOE-BBALL-001",
+          "SHORT-RUN-001"
+        ],
+        "latency_ms": 7.144,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "something to keep my coffee hot",
+        "relevant_skus": [
+          "BOTTLE-INS-001"
+        ],
+        "retrieved_skus": [
+          "BOTTLE-INS-001",
+          "JACKET-DOWN-001",
+          "TOWEL-SPORT-001",
+          "CAP-001",
+          "SOCK-RUN-001",
+          "SHOE-BBALL-001",
+          "BAG-LAPTOP-001",
+          "WATCH-FIT-001",
+          "WATCH-ANALOG-001",
+          "GLOVES-WIN-001"
+        ],
+        "latency_ms": 8.131,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "audio gear for the gym",
+        "relevant_skus": [
+          "EARBUD-SPORT-001"
+        ],
+        "retrieved_skus": [
+          "EARBUD-SPORT-001",
+          "WATCH-FIT-001",
+          "EARBUD-WIRED-001",
+          "JACKET-DOWN-001",
+          "BAND-RES-001",
+          "SPEAKER-BT-001",
+          "GLOVES-WIN-001",
+          "HEADPHONE-NC-001",
+          "SHOE-TRAIL-001",
+          "SHORT-RUN-001"
+        ],
+        "latency_ms": 8.117,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 1.0,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "bag that fits in an overhead cabin locker",
+        "relevant_skus": [
+          "BAG-TRAVEL-001"
+        ],
+        "retrieved_skus": [
+          "BAG-LAPTOP-001",
+          "BAG-TOTE-001",
+          "BAG-TRAVEL-001",
+          "BAG-SLEEVE-001",
+          "CAP-001",
+          "BOTTLE-INS-001",
+          "JACKET-WP-001",
+          "JACKET-DOWN-001",
+          "SHOE-BBALL-001",
+          "BELT-HYD-001"
+        ],
+        "latency_ms": 7.121,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.1,
+          "recall@5": 1.0,
+          "precision@5": 0.2,
+          "recall@3": 1.0,
+          "precision@3": 0.3333333333333333,
+          "recall@1": 0.0,
+          "precision@1": 0.0
+        }
+      },
+      {
+        "query": "wireless earphones",
+        "relevant_skus": [
+          "HEADPHONE-NC-001",
+          "EARBUD-SPORT-001"
+        ],
+        "retrieved_skus": [
+          "EARBUD-SPORT-001",
+          "EARBUD-WIRED-001",
+          "HEADPHONE-NC-001",
+          "SPEAKER-BT-001",
+          "BAND-RES-001",
+          "GLOVES-WIN-001",
+          "SHOE-DRESS-001",
+          "SHOE-WALK-001",
+          "WATCH-ANALOG-001",
+          "CAP-001"
+        ],
+        "latency_ms": 7.993,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.2,
+          "recall@5": 1.0,
+          "precision@5": 0.4,
+          "recall@3": 1.0,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.5,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "backpacks",
+        "relevant_skus": [
+          "BAG-LAPTOP-001",
+          "BAG-TRAVEL-001"
+        ],
+        "retrieved_skus": [
+          "BAG-LAPTOP-001",
+          "BAG-TRAVEL-001",
+          "BAG-TOTE-001",
+          "SHOE-HIKE-001",
+          "SHOE-TRAIL-001",
+          "CAP-001",
+          "SHOE-BBALL-001",
+          "JACKET-DOWN-001",
+          "SOCK-RUN-001",
+          "JACKET-WP-001"
+        ],
+        "latency_ms": 7.751,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.2,
+          "recall@5": 1.0,
+          "precision@5": 0.4,
+          "recall@3": 1.0,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.5,
+          "precision@1": 1.0
+        }
+      },
+      {
+        "query": "men's jackets",
+        "relevant_skus": [
+          "JACKET-WP-001",
+          "JACKET-DOWN-001"
+        ],
+        "retrieved_skus": [
+          "JACKET-DOWN-001",
+          "JACKET-WP-001",
+          "SHORT-RUN-001",
+          "SHOE-RUN-001",
+          "SHOE-HIKE-001",
+          "CAP-001",
+          "SHOE-DRESS-001",
+          "GLOVES-WIN-001",
+          "SOCK-RUN-001",
+          "SHOE-BBALL-001"
+        ],
+        "latency_ms": 8.047,
+        "metrics": {
+          "recall@10": 1.0,
+          "precision@10": 0.2,
+          "recall@5": 1.0,
+          "precision@5": 0.4,
+          "recall@3": 1.0,
+          "precision@3": 0.6666666666666666,
+          "recall@1": 0.5,
+          "precision@1": 1.0
         }
       }
     ]

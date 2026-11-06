@@ -10,10 +10,10 @@ import numpy as np
 
 from sentence_transformers import SentenceTransformer
 
-class TextStrategy(Enum):
-    NAME = "name"
+class TextStrategy(Enum):   
     FULL = "full"
     NAME_DESCRIPTION = "name_and_description"
+    NAME = "name"
 
 class SemanticSearch:
     """
@@ -163,11 +163,14 @@ class SemanticSearch:
             self.searchable_texts,
             convert_to_numpy=True,
             normalize_embeddings=True,
-            show_progress_bar=False,
+            show_progress_bar=True,
         )
 
         matrix = np.asarray(embeddings, dtype=np.float32)
-
+        print(f"Embedding matrix shape: {matrix.shape}")
+        print(f"Embedding matrix dtype: {matrix}")
+        
+    
         if matrix.ndim != 2:
             raise ValueError(
                 "The embedding model must return a two-dimensional matrix."

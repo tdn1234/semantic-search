@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import statistics
 import time
 from pathlib import Path
@@ -10,7 +11,7 @@ from typing import Any, Iterable
 from semantic_search import SemanticSearch, TextStrategy
 
 
-DEFAULT_K_VALUES = (1, 3, 5, 10)
+DEFAULT_K_VALUES = (10, 5, 3, 1)
 
 
 def load_evaluation(path: str | Path) -> list[dict[str, Any]]:
@@ -27,6 +28,8 @@ def load_evaluation(path: str | Path) -> list[dict[str, Any]]:
     if not isinstance(cases, list):
         raise ValueError("evaluation.json must contain a JSON array.")
 
+    print(f"Loaded cases {cases} evaluation cases from {evaluation_path}.")
+    # return
     if len(cases) < 20:
         raise ValueError(
             "The golden dataset must contain at least 20 queries."
@@ -243,6 +246,39 @@ def format_percentage(value: float) -> str:
     return f"{value * 100:.2f}%"
 
 
+def describe_best(
+    results: list[dict[str, Any]],
+    metric_key: str,
+    label: str,
+) -> str:
+    """Describe the best strategy for a metric, reporting ties honestly."""
+    best_value = max(result["metrics"][metric_key] for result in results)
+
+    winners = [
+        result["strategy"]
+        for result in results
+        if math.isclose(
+            result["metrics"][metric_key],
+            best_value,
+            abs_tol=1e-9,
+        )
+    ]
+
+    if len(winners) == len(results) and len(results) > 1:
+        return (
+            f"- {label}: all strategies tie at "
+            f"{format_percentage(best_value)}."
+        )
+
+    names = ", ".join(f"`{name}`" for name in winners)
+    suffix = " (tie)" if len(winners) > 1 else ""
+
+    return (
+        f"- Best {label}: {names}{suffix} with "
+        f"{format_percentage(best_value)}."
+    )
+
+
 def build_markdown_report(
     results: list[dict[str, Any]],
     model_name: str,
@@ -299,31 +335,15 @@ def build_markdown_report(
             + " |"
         )
 
-    best_recall_5 = max(
-        results,
-        key=lambda result: result["metrics"]["recall@5"],
-    )
-
-    best_precision_3 = max(
-        results,
-        key=lambda result: result["metrics"]["precision@3"],
-    )
-
     lines.extend(
         [
             "",
             "## Concrete observations",
             "",
-            (
-                f"- Best Recall@5: `{best_recall_5['strategy']}` "
-                f"with "
-                f"{format_percentage(best_recall_5['metrics']['recall@5'])}."
-            ),
-            (
-                f"- Best Precision@3: `{best_precision_3['strategy']}` "
-                f"with "
-                f"{format_percentage(best_precision_3['metrics']['precision@3'])}."
-            ),
+            describe_best(results, "recall@5", "Recall@5"),
+            describe_best(results, "precision@3", "Precision@3"),
+            describe_best(results, "recall@1", "Recall@1"),
+            describe_best(results, "precision@1", "Precision@1"),
             (
                 "- Name-only search has less descriptive information and "
                 "may perform poorly for use-case queries."
@@ -445,8 +465,13 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
 
+
     products = SemanticSearch.load_products(args.products)
     cases = load_evaluation(args.evaluation)
+
+    # print(f"Loaded {len(products)} products from {products}.")
+    print(f"Loaded {len(cases)} evaluation cases from {cases}.")
+    # return
 
     # Validate the product schema before checking golden SKUs.
     validation_engine = SemanticSearch(
